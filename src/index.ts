@@ -1,4 +1,5 @@
-type pexelsOptions = {
+import searchPhotos from './search-photos'
+type PexelsOptions = {
 	apiUrl?: string,
 	apiKey?: string
 }
@@ -6,14 +7,17 @@ type pexelsOptions = {
 export class PexelsWrapper {
 	apiUrl: string;
 	apiKey: string;
-	constructor(options?: pexelsOptions) {
+	searchPhotos: any;
+	constructor(options?: PexelsOptions) {
 		this.apiUrl = options.apiUrl;
 		this.apiKey = options.apiKey;
+
+		this.searchPhotos = searchPhotos.bind(this)();
 	}
 
 	request (url: string): Promise<Response> {
 		const headers: any = {
-			Authorization: `Bearer ${this.apiKey}`
+			Authorization: `${this.apiKey}`
 		};
 
 		return fetch(url, headers);
