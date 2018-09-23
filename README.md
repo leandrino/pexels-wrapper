@@ -2,6 +2,12 @@
 
 Unofficial simple pexels photos wrapper.
 
+## Installation
+
+```sh
+$ npm install @leandrino/pexels-wrapper --save
+```
+
 ## How to use
 
 ### ES6
@@ -36,7 +42,7 @@ const pexels = new PexelsWrapper({
 ```html
 <script src="main.js"></script>
 
-After that the library will be available to the Global as `SpotifyWrapper`. Follow an example:
+After that the library will be available to the Global as `PexelsWrapper`. Follow an example:
 
 ```js
 const pexels = new Pexels.PexelsWrapper({
