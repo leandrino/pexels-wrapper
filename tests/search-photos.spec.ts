@@ -7,7 +7,7 @@ describe('searchPhotos', () => {
 			apiUrl: 'https://api.pexels.com/v1',
 			apiKey: '1xx2xxx3'
 		});
-		pexels.request = jest.fn().mockImplementation(() => Promise.resolve({ status: 'success'}));
+		pexels.request = jest.fn();
 	});
 
 	it('should exist the searchPhotos method', () => {

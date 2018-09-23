@@ -1,8 +1,12 @@
 {
-  "name": "pexels-wrapper",
-  "version": "0.1.0",
+  "name": "@leandrino/pexels-wrapper",
+  "version": "1.0.0",
   "description": "A simple wrapper from pexels",
-  "main": "index.js",
+  "main": "lib/main.js",
+  "files": [
+    "dist",
+    "lib"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.1",
@@ -53,6 +57,10 @@
     "wrapper",
     "pexels"
   ],
-  "author": "Leandro Alexandrino <alexandrinowd@gmail.com>",
+  "author": "Leandro Alexandrino <alexandrinowd@gmail.com> (http://leandrino.me/)",
+  "bugs": {
+    "url": "https://github.com/leandrino/pexels-wrapper/issues"
+  },
+  "homepage": "https://github.com/leandrino/pexels-wrapper#readme",
   "license": "MIT"
 }

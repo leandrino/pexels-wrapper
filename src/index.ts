@@ -5,10 +5,10 @@ type PexelsOptions = {
 }
 
 export class PexelsWrapper {
-	apiUrl: string;
-	apiKey: string;
+	apiUrl?: string;
+	apiKey?: string;
 	searchPhotos: any;
-	constructor(options?: PexelsOptions) {
+	constructor(options: PexelsOptions) {
 		this.apiUrl = options.apiUrl;
 		this.apiKey = options.apiKey;
 
