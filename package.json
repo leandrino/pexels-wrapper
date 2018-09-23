@@ -1,6 +1,6 @@
 {
   "name": "@leandrino/pexels-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple wrapper from pexels",
   "main": "lib/main.js",
   "files": [
